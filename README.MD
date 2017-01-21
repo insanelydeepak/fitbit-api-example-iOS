@@ -3,6 +3,7 @@
 
 #Fitbit OAuth2 iOS Objective-C Demo
 This app deals with the boilerplate code of using the Fitbit API with iOS Objective-C, authenticating via OAuth2 and making a simple API call. It is meant as a starting point for more robust applications and a demonstration of some of the basic concepts of the API. 
+
 Objective-C version of Swift iOS Demo by https://github.com/Stasonis/fitbit-api-example-swift with AFNetworking & Reachability using CocoaPods.  
 
 [Read More About the Fitbit API](https://dev.fitbit.com/docs/)
