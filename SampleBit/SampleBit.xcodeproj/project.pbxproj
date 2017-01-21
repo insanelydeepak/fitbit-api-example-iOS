@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		007AE3271E32FC8A0075C88E /* FitbitAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 007AE3241E32FC8A0075C88E /* FitbitAPIManager.m */; };
+		007AE3281E32FC8A0075C88E /* FitbitAuthHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 007AE3261E32FC8A0075C88E /* FitbitAuthHandler.m */; };
+		467060DD660B7E4607416F2D /* libPods-SampleBit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7EE1F816B4BA55F14F98CB /* libPods-SampleBit.a */; };
+		AE6142E31E2F2E5200D582DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6142E21E2F2E5200D582DC /* main.m */; };
+		AE6142E61E2F2E5200D582DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6142E51E2F2E5200D582DC /* AppDelegate.m */; };
+		AE6142E91E2F2E5200D582DC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6142E81E2F2E5200D582DC /* ViewController.m */; };
+		AE6142EC1E2F2E5200D582DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6142EA1E2F2E5200D582DC /* Main.storyboard */; };
+		AE6142EE1E2F2E5200D582DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE6142ED1E2F2E5200D582DC /* Assets.xcassets */; };
+		AE6142F11E2F2E5200D582DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6142EF1E2F2E5200D582DC /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		007AE3231E32FC8A0075C88E /* FitbitAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FitbitAPIManager.h; sourceTree = "<group>"; };
+		007AE3241E32FC8A0075C88E /* FitbitAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FitbitAPIManager.m; sourceTree = "<group>"; };
+		007AE3251E32FC8A0075C88E /* FitbitAuthHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FitbitAuthHandler.h; sourceTree = "<group>"; };
+		007AE3261E32FC8A0075C88E /* FitbitAuthHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FitbitAuthHandler.m; sourceTree = "<group>"; };
+		12A31E3295F5790CD915BDAA /* Pods-SampleBit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleBit.release.xcconfig"; path = "Pods/Target Support Files/Pods-SampleBit/Pods-SampleBit.release.xcconfig"; sourceTree = "<group>"; };
+		78BF7901C936A9FD330B96C3 /* Pods-SampleBit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleBit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SampleBit/Pods-SampleBit.debug.xcconfig"; sourceTree = "<group>"; };
+		AE6142DE1E2F2E5200D582DC /* SampleBit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleBit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE6142E21E2F2E5200D582DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE6142E41E2F2E5200D582DC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AE6142E51E2F2E5200D582DC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AE6142E71E2F2E5200D582DC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AE6142E81E2F2E5200D582DC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AE6142EB1E2F2E5200D582DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE6142ED1E2F2E5200D582DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE6142F01E2F2E5200D582DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE6142F21E2F2E5200D582DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA7EE1F816B4BA55F14F98CB /* libPods-SampleBit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SampleBit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE6142DB1E2F2E5200D582DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				467060DD660B7E4607416F2D /* libPods-SampleBit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		007AE3221E32FC8A0075C88E /* FitbitAPI */ = {
+			isa = PBXGroup;
+			children = (
+				007AE3231E32FC8A0075C88E /* FitbitAPIManager.h */,
+				007AE3241E32FC8A0075C88E /* FitbitAPIManager.m */,
+				007AE3251E32FC8A0075C88E /* FitbitAuthHandler.h */,
+				007AE3261E32FC8A0075C88E /* FitbitAuthHandler.m */,
+			);
+			path = FitbitAPI;
+			sourceTree = "<group>";
+		};
+		262B56ECA8E3E40A601E1A37 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78BF7901C936A9FD330B96C3 /* Pods-SampleBit.debug.xcconfig */,
+				12A31E3295F5790CD915BDAA /* Pods-SampleBit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AE6142D51E2F2E5200D582DC = {
+			isa = PBXGroup;
+			children = (
+				AE6142E01E2F2E5200D582DC /* SampleBit */,
+				AE6142DF1E2F2E5200D582DC /* Products */,
+				262B56ECA8E3E40A601E1A37 /* Pods */,
+				C55AAE4E30D4C8218A2E410A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 0;
+		};
+		AE6142DF1E2F2E5200D582DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE6142DE1E2F2E5200D582DC /* SampleBit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE6142E01E2F2E5200D582DC /* SampleBit */ = {
+			isa = PBXGroup;
+			children = (
+				007AE3221E32FC8A0075C88E /* FitbitAPI */,
+				AE6142E41E2F2E5200D582DC /* AppDelegate.h */,
+				AE6142E51E2F2E5200D582DC /* AppDelegate.m */,
+				AE6142E71E2F2E5200D582DC /* ViewController.h */,
+				AE6142E81E2F2E5200D582DC /* ViewController.m */,
+				AE6142EA1E2F2E5200D582DC /* Main.storyboard */,
+				AE6142ED1E2F2E5200D582DC /* Assets.xcassets */,
+				AE6142EF1E2F2E5200D582DC /* LaunchScreen.storyboard */,
+				AE6142F21E2F2E5200D582DC /* Info.plist */,
+				AE6142E11E2F2E5200D582DC /* Supporting Files */,
+			);
+			path = SampleBit;
+			sourceTree = "<group>";
+		};
+		AE6142E11E2F2E5200D582DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE6142E21E2F2E5200D582DC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C55AAE4E30D4C8218A2E410A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA7EE1F816B4BA55F14F98CB /* libPods-SampleBit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE6142DD1E2F2E5200D582DC /* SampleBit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE6142F51E2F2E5200D582DC /* Build configuration list for PBXNativeTarget "SampleBit" */;
+			buildPhases = (
+				25DDEA029428FDEE2ADE98D2 /* [CP] Check Pods Manifest.lock */,
+				AE6142DA1E2F2E5200D582DC /* Sources */,
+				AE6142DB1E2F2E5200D582DC /* Frameworks */,
+				AE6142DC1E2F2E5200D582DC /* Resources */,
+				B8FE07CC7C2E25EC6DD1E7B1 /* [CP] Embed Pods Frameworks */,
+				4264A352B47A17DA54FC6366 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleBit;
+			productName = SampleBit;
+			productReference = AE6142DE1E2F2E5200D582DC /* SampleBit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE6142D61E2F2E5200D582DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = insanelydeepak;
+				TargetAttributes = {
+					AE6142DD1E2F2E5200D582DC = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AE6142D91E2F2E5200D582DC /* Build configuration list for PBXProject "SampleBit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE6142D51E2F2E5200D582DC;
+			productRefGroup = AE6142DF1E2F2E5200D582DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE6142DD1E2F2E5200D582DC /* SampleBit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE6142DC1E2F2E5200D582DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE6142F11E2F2E5200D582DC /* LaunchScreen.storyboard in Resources */,
+				AE6142EE1E2F2E5200D582DC /* Assets.xcassets in Resources */,
+				AE6142EC1E2F2E5200D582DC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25DDEA029428FDEE2ADE98D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4264A352B47A17DA54FC6366 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SampleBit/Pods-SampleBit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8FE07CC7C2E25EC6DD1E7B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SampleBit/Pods-SampleBit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE6142DA1E2F2E5200D582DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				007AE3271E32FC8A0075C88E /* FitbitAPIManager.m in Sources */,
+				AE6142E91E2F2E5200D582DC /* ViewController.m in Sources */,
+				007AE3281E32FC8A0075C88E /* FitbitAuthHandler.m in Sources */,
+				AE6142E61E2F2E5200D582DC /* AppDelegate.m in Sources */,
+				AE6142E31E2F2E5200D582DC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE6142EA1E2F2E5200D582DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE6142EB1E2F2E5200D582DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE6142EF1E2F2E5200D582DC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE6142F01E2F2E5200D582DC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE6142F31E2F2E5200D582DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AE6142F41E2F2E5200D582DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE6142F61E2F2E5200D582DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78BF7901C936A9FD330B96C3 /* Pods-SampleBit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SampleBit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fitbit.SampleBit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AE6142F71E2F2E5200D582DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12A31E3295F5790CD915BDAA /* Pods-SampleBit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SampleBit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fitbit.SampleBit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE6142D91E2F2E5200D582DC /* Build configuration list for PBXProject "SampleBit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE6142F31E2F2E5200D582DC /* Debug */,
+				AE6142F41E2F2E5200D582DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE6142F51E2F2E5200D582DC /* Build configuration list for PBXNativeTarget "SampleBit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE6142F61E2F2E5200D582DC /* Debug */,
+				AE6142F71E2F2E5200D582DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE6142D61E2F2E5200D582DC /* Project object */;
+}
