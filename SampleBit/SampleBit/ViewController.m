@@ -21,9 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-  //  fitbitAuthHandler = [[FitbitAuthHandler alloc]init:self] ;
-    //authenticationController.delegate = self;
-    
+    fitbitAuthHandler = [[FitbitAuthHandler alloc]init:self] ;
+      
 }
 
 
