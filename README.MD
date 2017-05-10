@@ -25,16 +25,15 @@ Once you have setup your app you need to put the client ID and client secret int
 
 ```
 class FitbitAuthHandler: NSObject, SFSafariViewControllerDelegate {
--(void)loadVars{
-
-   clientID        = "YOUR_CLIENT_ID_HERE"
-   clientSecret    = "YOUR_CLIENT_SECRET_HERE"
-   redirectURI     = "YOUR_CLIENT_URI_HERE://"
-   authUrl         = [NSURL URLWithString:@"https://www.fitbit.com/oauth2/authorize"]
-   refreshTokenUrl = [NSURL URLWithString:@"https://api.fitbit.com/oauth2/token"]
-   defaultScope    = "YOUR_CLIENT_SCOPE_HERE"
-
-}
+    func loadVars () 
+        {
+           clientID        = "YOUR_CLIENT_ID_HERE"
+           clientSecret    = "YOUR_CLIENT_SECRET_HERE"
+           redirectURI     = "YOUR_CLIENT_URI_HERE://"
+           authUrl         = NSURL(string: "https://www.fitbit.com/oauth2/authorize")
+           refreshTokenUrl = NSURL(string: "https://api.fitbit.com/oauth2/token")
+           defaultScope    = "YOUR_CLIENT_SCOPE_HERE"
+        }
 ```
 
 Along with the client ID and secret you also need to have a redirect URI that your app responds to. This needs to be setup in your Fitbit App Config, in the AuthenticationController and in the iOS App target's Info: LSApplicationQueriesSchemes, and URL Types. Note that in the URL Types: scheme don't put in the `://` of your redirect uri.
