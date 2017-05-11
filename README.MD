@@ -24,15 +24,15 @@ This is the config I used while developing. Your app may not need read/write acc
 Once you have setup your app you need to put the client ID and client secret into the application config. You should be able to find both of these on the [manage apps page](https://dev.fitbit.com/apps). These values should be placed in SampleBit/FitbitAuthHandler.m.
 
 ```
-class FitbitAuthHandler: NSObject, SFSafariViewControllerDelegate {
+@interface FitbitAuthHandler : NSObject <SFSafariViewControllerDelegate>
 -(void)loadVars{
 
-   clientID        = "YOUR_CLIENT_ID_HERE"
-   clientSecret    = "YOUR_CLIENT_SECRET_HERE"
-   redirectURI     = "YOUR_CLIENT_URI_HERE://"
-   authUrl         = [NSURL URLWithString:@"https://www.fitbit.com/oauth2/authorize"]
-   refreshTokenUrl = [NSURL URLWithString:@"https://api.fitbit.com/oauth2/token"]
-   defaultScope    = "YOUR_CLIENT_SCOPE_HERE"
+   clientID        = @"YOUR_CLIENT_ID_HERE";
+   clientSecret    = @"YOUR_CLIENT_SECRET_HERE";
+   redirectURI     = @"YOUR_CLIENT_URI_HERE://";
+   authUrl         = [NSURL URLWithString:@"https://www.fitbit.com/oauth2/authorize"];
+   refreshTokenUrl = [NSURL URLWithString:@"https://api.fitbit.com/oauth2/token"];
+   defaultScope    = @"YOUR_CLIENT_SCOPE_HERE";
 
 }
 ```
