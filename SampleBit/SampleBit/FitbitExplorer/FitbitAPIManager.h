@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <AFNetworking/AFNetworking.h>
-#import <Reachability/Reachability.h>
+#import "Reachability.h"
 #import <UIKit/UIKit.h>
-#import "FitbitAuthHandler.h"
+#import "AFNetworking.h"
 @interface FitbitAPIManager : NSObject
 + (instancetype)sharedManager;
 
 -(void)requestGET:(NSString *)strURL Token:(NSString *)token success:(void (^)(NSDictionary *responseObject))success failure:(void (^)(NSError *error))failure;
+-(void)requestPOST:(NSString *)strURL Parameter:(NSDictionary *)param Token:(NSString *)token success:(void (^)(NSDictionary *responseObject))success failure:(void (^)(NSError *error))failure;
 @end

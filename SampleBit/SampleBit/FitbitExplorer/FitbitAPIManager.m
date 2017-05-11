@@ -26,11 +26,10 @@
     BOOL isNetworkAvailable = [self checkNetConnection];
     
     if (!isNetworkAvailable) {
-        UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Info!" message:@"Please check your internet connection" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-        [alert show];
+        [self showAlert:@"Please check your internet connection"];
     }
     else {
-        AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+          AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
         [manager.requestSerializer setValue:[NSString stringWithFormat:@"Bearer %@",token] forHTTPHeaderField:@"Authorization"];
         manager.responseSerializer.acceptableContentTypes = [manager.responseSerializer.acceptableContentTypes setByAddingObject:@"text/html"];
         [manager GET:strURL parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
@@ -54,7 +53,54 @@
         }];
     }
 }
+-(void)requestPOST:(NSString *)strURL Parameter:(NSDictionary *)param Token:(NSString *)token success:(void (^)(NSDictionary *responseObject))success failure:(void (^)(NSError *error))failure {
+    
+    BOOL isNetworkAvailable = [self checkNetConnection];
+    
+    if (!isNetworkAvailable) {
+        [self showAlert:@"Please check your internet connection"];
+    }
+    else {
+        AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+        [manager.requestSerializer setValue:[NSString stringWithFormat:@"Bearer %@",token] forHTTPHeaderField:@"Authorization"];
+        manager.responseSerializer.acceptableContentTypes = [manager.responseSerializer.acceptableContentTypes setByAddingObject:@"text/html"];
+        
+        [manager POST:strURL parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            if([responseObject isKindOfClass:[NSDictionary class]]) {
+                if(success) {
+                    success(responseObject);
+                }
+            }
+            else {
+                NSDictionary *response = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingAllowFragments error:nil];
+                if(success) {
+                    success(response);
+                }
+            }
 
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            if(failure) {
+                failure(error);
+            }
+        }];
+        
+    }
+}
+-(void)showAlert :(NSString *)message{
+    UIWindow* window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    window.rootViewController = [UIViewController new];
+    window.windowLevel = UIWindowLevelAlert + 1;
+    
+    UIAlertController* alertView = [UIAlertController alertControllerWithTitle:@"Info!" message:message preferredStyle:UIAlertControllerStyleAlert];
+    
+    [alertView addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        
+        window.hidden = YES;
+    }]];
+    
+    [window makeKeyAndVisible];
+    [window.rootViewController presentViewController:alertView animated:YES completion:nil];
+}
 //-----------------------------------------------------
 //                 Method : Reachability
 //-----------------------------------------------------

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		007AE3271E32FC8A0075C88E /* FitbitAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 007AE3241E32FC8A0075C88E /* FitbitAPIManager.m */; };
-		007AE3281E32FC8A0075C88E /* FitbitAuthHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 007AE3261E32FC8A0075C88E /* FitbitAuthHandler.m */; };
+		00FB012D1EC468880004C6F9 /* FitbitAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FB01291EC468880004C6F9 /* FitbitAPIManager.m */; };
+		00FB012E1EC468880004C6F9 /* FitbitAuthHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FB012B1EC468880004C6F9 /* FitbitAuthHandler.m */; };
 		467060DD660B7E4607416F2D /* libPods-SampleBit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7EE1F816B4BA55F14F98CB /* libPods-SampleBit.a */; };
 		AE6142E31E2F2E5200D582DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6142E21E2F2E5200D582DC /* main.m */; };
 		AE6142E61E2F2E5200D582DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6142E51E2F2E5200D582DC /* AppDelegate.m */; };
@@ -19,10 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		007AE3231E32FC8A0075C88E /* FitbitAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FitbitAPIManager.h; sourceTree = "<group>"; };
-		007AE3241E32FC8A0075C88E /* FitbitAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FitbitAPIManager.m; sourceTree = "<group>"; };
-		007AE3251E32FC8A0075C88E /* FitbitAuthHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FitbitAuthHandler.h; sourceTree = "<group>"; };
-		007AE3261E32FC8A0075C88E /* FitbitAuthHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FitbitAuthHandler.m; sourceTree = "<group>"; };
+		00FB01281EC468880004C6F9 /* FitbitAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FitbitAPIManager.h; sourceTree = "<group>"; };
+		00FB01291EC468880004C6F9 /* FitbitAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FitbitAPIManager.m; sourceTree = "<group>"; };
+		00FB012A1EC468880004C6F9 /* FitbitAuthHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FitbitAuthHandler.h; sourceTree = "<group>"; };
+		00FB012B1EC468880004C6F9 /* FitbitAuthHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FitbitAuthHandler.m; sourceTree = "<group>"; };
+		00FB012C1EC468880004C6F9 /* FitbitExplorer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FitbitExplorer.h; sourceTree = "<group>"; };
 		12A31E3295F5790CD915BDAA /* Pods-SampleBit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleBit.release.xcconfig"; path = "Pods/Target Support Files/Pods-SampleBit/Pods-SampleBit.release.xcconfig"; sourceTree = "<group>"; };
 		78BF7901C936A9FD330B96C3 /* Pods-SampleBit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleBit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SampleBit/Pods-SampleBit.debug.xcconfig"; sourceTree = "<group>"; };
 		AE6142DE1E2F2E5200D582DC /* SampleBit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleBit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,15 +51,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		007AE3221E32FC8A0075C88E /* FitbitAPI */ = {
+		00FB01271EC468880004C6F9 /* FitbitExplorer */ = {
 			isa = PBXGroup;
 			children = (
-				007AE3231E32FC8A0075C88E /* FitbitAPIManager.h */,
-				007AE3241E32FC8A0075C88E /* FitbitAPIManager.m */,
-				007AE3251E32FC8A0075C88E /* FitbitAuthHandler.h */,
-				007AE3261E32FC8A0075C88E /* FitbitAuthHandler.m */,
+				00FB012C1EC468880004C6F9 /* FitbitExplorer.h */,
+				00FB01281EC468880004C6F9 /* FitbitAPIManager.h */,
+				00FB01291EC468880004C6F9 /* FitbitAPIManager.m */,
+				00FB012A1EC468880004C6F9 /* FitbitAuthHandler.h */,
+				00FB012B1EC468880004C6F9 /* FitbitAuthHandler.m */,
 			);
-			path = FitbitAPI;
+			path = FitbitExplorer;
 			sourceTree = "<group>";
 		};
 		262B56ECA8E3E40A601E1A37 /* Pods */ = {
@@ -92,7 +94,7 @@
 		AE6142E01E2F2E5200D582DC /* SampleBit */ = {
 			isa = PBXGroup;
 			children = (
-				007AE3221E32FC8A0075C88E /* FitbitAPI */,
+				00FB01271EC468880004C6F9 /* FitbitExplorer */,
 				AE6142E41E2F2E5200D582DC /* AppDelegate.h */,
 				AE6142E51E2F2E5200D582DC /* AppDelegate.m */,
 				AE6142E71E2F2E5200D582DC /* ViewController.h */,
@@ -244,11 +246,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				007AE3271E32FC8A0075C88E /* FitbitAPIManager.m in Sources */,
 				AE6142E91E2F2E5200D582DC /* ViewController.m in Sources */,
-				007AE3281E32FC8A0075C88E /* FitbitAuthHandler.m in Sources */,
 				AE6142E61E2F2E5200D582DC /* AppDelegate.m in Sources */,
+				00FB012D1EC468880004C6F9 /* FitbitAPIManager.m in Sources */,
 				AE6142E31E2F2E5200D582DC /* main.m in Sources */,
+				00FB012E1EC468880004C6F9 /* FitbitAuthHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

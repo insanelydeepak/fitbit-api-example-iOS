@@ -12,5 +12,6 @@
 
 
 - (IBAction)actionLogin:(UIButton *)sender;
+- (IBAction)actionGetProfile:(UIButton *)sender;
 @end
 

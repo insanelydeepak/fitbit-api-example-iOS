@@ -8,16 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import <SafariServices/SafariServices.h>
-#import "Reachability.h"
-@protocol FitbitAuthHandlerProtocol <NSObject>
--(void)authorizationDidFinish:(BOOL )success;
-@end
+//******* Authorization Errors for code 401 ************
+#define fInvalid_Client    @"invalid_client"
+#define fExpied_Token      @"expired_token"
+#define fInvalid_Token     @"invalid_token"
+#define fInvalid_Request   @"invalid_request"
+#define FitbitNotification @"FitbitAthozired"
 @interface FitbitAuthHandler : NSObject <SFSafariViewControllerDelegate>
-@property (strong, nonatomic) id <FitbitAuthHandlerProtocol> delegate;
-
 -(instancetype)init:(id )delegate_;
 -(void)login:(UIViewController*)viewController;
--(NSString *)getToken;
--(void)clearToken;
+-(void)showAlert :(NSString *)message;
++(NSString *)getToken;
++(void)clearToken;
 
 @end
