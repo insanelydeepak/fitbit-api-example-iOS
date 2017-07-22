@@ -26,7 +26,7 @@
     //------ Initialize all required vars -----
     clientID         = @"";
     clientSecret     = @"";
-    redirectURI      = @"";
+    redirectURI      = @"samplebit://";
     expiresIn        = @"604800";
     authUrl          = [NSURL URLWithString:@"https://www.fitbit.com/oauth2/authorize"];
     refreshTokenUrl  = [NSURL URLWithString:@"https://api.fitbit.com/oauth2/token"];

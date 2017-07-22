@@ -56,12 +56,12 @@
                                 <rect key="frame" x="113" y="587" width="149" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.77647058820000003" green="0.28627450980000002" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="getProfile">
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Revoke Access">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="actionGetProfile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nVs-vK-SSw"/>
+                                    <action selector="actionRevokeAccess:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q5j-XE-hss"/>
                                 </connections>
                             </button>
                         </subviews>

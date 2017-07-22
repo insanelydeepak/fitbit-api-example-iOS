@@ -66,4 +66,9 @@
     }];
 }
 
+- (IBAction)actionRevokeAccess:(UIButton *)sender {
+    NSString *token = [FitbitAuthHandler getToken];
+    [fitbitAuthHandler  revokeAccessToken:token];
+}
+
 @end

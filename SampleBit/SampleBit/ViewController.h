@@ -13,5 +13,6 @@
 
 - (IBAction)actionLogin:(UIButton *)sender;
 - (IBAction)actionGetProfile:(UIButton *)sender;
+- (IBAction)actionRevokeAccess:(UIButton *)sender;
 @end
 
