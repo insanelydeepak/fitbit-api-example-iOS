@@ -124,7 +124,7 @@
     [window makeKeyAndVisible];
     [window.rootViewController presentViewController:alertView animated:YES completion:nil];
 }
-
+#pragma mark - Fitbit Access Token
 -(void)getAccessToken:(BOOL)success{
      if (success) {
         AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
@@ -149,6 +149,35 @@
      
         [self showAlert:@"Authorization canceled"];
     }
+}
+-(void)revokeAccessToken:(NSString *)token{
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    NSString *base64 = [self base64String:[NSString stringWithFormat:@"%@:%@",clientID,clientSecret]];
+    
+    [manager.requestSerializer setValue:[NSString stringWithFormat:@"Basic %@",base64] forHTTPHeaderField:@"Authorization"];
+    manager.responseSerializer.acceptableContentTypes = [manager.responseSerializer.acceptableContentTypes setByAddingObject:@"application/x-www-form-urlencoded"];
+    
+    NSDictionary *params = @{@"token":token};
+    [manager POST:@"https://api.fitbit.com/oauth2/revoke" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSHTTPURLResponse *response = (NSHTTPURLResponse *) [task response];
+        NSInteger statusCode = [response statusCode];
+
+        if (statusCode == 200) {
+            //******************** clear Token ******************
+            [[NSUserDefaults standardUserDefaults] setObject:nil  forKey:@"fitbit_token"];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+            //********************* *********************** **********************
+            NSLog(@"Fitbit RevokeToken Successfully");
+            
+        }
+        else {
+            NSLog(@"Fitbit RevokeToken Error: StatusCode= %ld Response= %@",(long)statusCode,responseObject);
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        [self showAlert:[NSString stringWithFormat:@"%@",error.localizedDescription]];
+    }];
+    
 }
 -(NSString *)base64String:(NSString *)string {
     // Create NSData object

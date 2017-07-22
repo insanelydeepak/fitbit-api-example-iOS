@@ -16,8 +16,10 @@
 #define FitbitNotification @"FitbitAthozired"
 @interface FitbitAuthHandler : NSObject <SFSafariViewControllerDelegate>
 -(instancetype)init:(id )delegate_;
+
 -(void)login:(UIViewController*)viewController;
 -(void)showAlert :(NSString *)message;
+-(void)revokeAccessToken:(NSString *)token;
 +(NSString *)getToken;
 +(void)clearToken;
 
