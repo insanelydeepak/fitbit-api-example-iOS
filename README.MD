@@ -9,8 +9,7 @@ Objective-C version of Swift iOS Demo by https://github.com/Stasonis/fitbit-api-
 [Read More About the Fitbit API](https://dev.fitbit.com/docs/)
 
 ## Sample Screenshot
-![DEMO](screenshots/sampleBit example.gif)
-
+![(DEMO)](https://github.com/insanelydeepak/fitbit-api-example-iOS/blob/master/screenshots/sampleBit%20example.gif)
 
 ##Prerequisites
 This document assumes you have Xcode 8 and Swift 3 installed. A tutorial for installing these is out of scope for this project, but there are many resources to instruct you on how to do so.
