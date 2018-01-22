@@ -69,6 +69,7 @@
 - (IBAction)actionRevokeAccess:(UIButton *)sender {
     NSString *token = [FitbitAuthHandler getToken];
     [fitbitAuthHandler  revokeAccessToken:token];
+    resultView.text = @"Please press login to authorize";
 }
 
 @end

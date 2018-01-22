@@ -8,6 +8,10 @@ Objective-C version of Swift iOS Demo by https://github.com/Stasonis/fitbit-api-
 
 [Read More About the Fitbit API](https://dev.fitbit.com/docs/)
 
+## Sample Screenshot
+![DEMO](screenshots/sampleBit example.gif)
+
+
 ##Prerequisites
 This document assumes you have Xcode 8 and Swift 3 installed. A tutorial for installing these is out of scope for this project, but there are many resources to instruct you on how to do so.
 
@@ -55,3 +59,5 @@ After a moment your app should be started and you can follow the login flow.
 Once you've logged in you should be able to see your current steps count for today.
 
 The app as written will only access your fitbit profile to demonstrate OAuth working. It only stores tokens in  NSUserDefaults, memory and in Safari's cache
+
+
