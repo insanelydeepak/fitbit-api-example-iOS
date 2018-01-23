@@ -14,7 +14,7 @@ Objective-C version of Swift iOS Demo by https://github.com/Stasonis/fitbit-api-
 
 
 ## Prerequisites 
-This document assumes you have Xcode 8 and Swift 3 installed. A tutorial for installing these is out of scope for this project, but there are many resources to instruct you on how to do so.
+This document assumes you have Xcode 8 or higheru. A tutorial for installing these is out of scope for this project, but there are many resources to instruct you on how to do so.
 
 ## Developing Your Own App
 
