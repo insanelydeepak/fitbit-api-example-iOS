@@ -62,3 +62,8 @@ Once you've logged in you should be able to see your current steps count for tod
 The app as written will only access your fitbit profile to demonstrate OAuth working. It only stores tokens in  NSUserDefaults, memory and in Safari's cache
 
 
+## Donation
+If this project help you reduce time to develop, you can give me a cup of coffee :) 
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](http://paypal.me/insanelydeepak)
+
